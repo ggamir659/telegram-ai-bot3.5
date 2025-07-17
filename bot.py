@@ -38,7 +38,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(ai_reply)
 
 # Создаём бота
-app = ApplicationBuilder().token(7532910236:AAEO4IILuS_iLdmnXUBAov2hyx0LGY3dK-o).build()
+app = ApplicationBuilder().token("7532910236:AAEO4IILuS_iLdmnXUBAov2hyx0LGY3dK-o")uild()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
 
